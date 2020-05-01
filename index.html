@@ -11598,27 +11598,15 @@ a.text-dark:hover {
 
 /* About Us Section
 --------------------------------*/
-    @keyframes zoominoutsinglefeatured {
-    0% {
-        transform: scale(1,1);
-    }
-    50% {
-        transform: scale(1.2,1.2);
-    }
-    100% {
-        transform: scale(1,1);
-    }
-}
+  
 
-.cardcontainer img {
-	animation: zoominoutsinglefeatured 5s infinite ;
-}
+
 #about {
   background: url("https://img.alicdn.com/tfs/TB17FvoEkT2gK0jSZFkXXcIQFXa-1920-752.png") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
-   animation: zoominoutsinglefeatured 20s infinite ;
+   
 }
 
 #about::before {
@@ -11628,7 +11616,7 @@ a.text-dark:hover {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.45);
   z-index: 9;
 }
 
@@ -11706,95 +11694,9 @@ a.text-dark:hover {
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
-.reflectBelow	{ 
-	-webkit-box-reflect: below 0
-    -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent), to(white)); 
-}
-</style>
-<style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-
-body {
-    background: #ddd;
-    background: linear-gradient(#ddd, #e8e8e8);
-    font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    margin:0;
-}
-
-.thumb {
-    width: 400px;
-    height: 300px;
-    margin: 70px auto;
-    perspective: 1000px;
-}
-
-.thumb a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-		url("https://img.alicdn.com/tfs/TB1ihriEXP7gK0jSZFjXXc5aXXa-475-398.png");
-    background-size: 0, cover;
-    transform-style: preserve-3d;
-    transition: all 0.5s;
-}
-
-.thumb:hover a {
-    transform: rotateX(80deg);
-    transform-origin: bottom;
-}
-.thumb a:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 36px;
-    background: inherit;
-    background-size: cover, cover;
-    background-position: bottom;
-    transform: rotateX(90deg);
-    transform-origin: bottom;
-}
-.thumb a span {
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    font: bold 12px/36px "Open Sans";
-    text-align: center;
-    transform: rotateX(-89.99deg);
-    transform-origin: top;
-    z-index: 1;
-}
-.thumb a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s;
-    opacity: 0.15;
-    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
-    transform-origin: bottom;
-}
-
-.thumb:hover a:before {
-    opacity: 1;
-    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
-    transform: rotateX(0) translateZ(-60px) scale(0.85);
-}
-
-
 
 </style>
+
 
   <main id="main">
 
@@ -11807,18 +11709,18 @@ body {
 
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
-              <div class="img">
+              <div class="img wow fadeInDown" data-wow-delay="0.2s">
                 <img src="https://img.alicdn.com/tfs/TB13L9XEoH1gK0jSZSyXXXtlpXa-768-450.png" alt="" class="img-fluid">
                 
               </div>
               <h2 class="title wow fadeInDown" data-wow-delay="0.2s"><a href="#">3D Highway Racer</a></h2>
-              <p class="box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+              <p class="box wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
                 You can keep playing and win DFG points in your account. The more you play moer chances of winning points.
               </p>
             </div>
           </div>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
                 <img src="https://img.alicdn.com/tfs/TB1n_4.EkL0gK0jSZFtXXXQCXXa-768-450.png" alt="" class="img-fluid">
